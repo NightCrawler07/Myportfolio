@@ -1,0 +1,116 @@
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    
+    --fw-reg: 300;
+    --fw-bold: 900;
+    
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+    
+    --fs-h1: 3rem;
+    --fs-h2: 1.55rem;
+    --fs-h3: 2.0rem;
+    --fs-body: 1rem;
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}body{
+    z-index: 1;
+        background-image: url("bg.png");
+        background-repeat: no-repeat; 
+        
+}
+.nap{
+margin-left: 25em;
+display: flex;
+}
+ul{
+    list-style: none;
+}
+li{
+    text-align: center;
+    
+}
+.name{
+    display: inline-block;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    font-size: var(--fs-h3);
+    font-family: var(--ff-secondary);
+    animation: zoomInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
+}  
+
+
+a {
+    position: relative;
+    font-family: var(--ff-secondary);
+    font-size: 3em;
+    padding: 20px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 40px;
+  }
+  
+  a span {
+    position: relative;
+    margin-right: 400px;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial;
+    letter-spacing: 8px;
+    z-index: 1;
+  }
+  a .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: white;
+    transition: .5s;
+  }
+  
+  a .liquid::after,
+  a .liquid::before {
+    content: '';
+    width: 300%;
+    height: 200%;
+    position: absolute;
+    transform: translate(50%, 75%);
+    background: #000;
+  }
+  
+  a .liquid::before {
+    
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 11s linear infinite;
+  }
+  
+  a .liquid::after {
+    
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 7s linear infinite;
+  }
+  
+  a:hover .liquid{
+    top: 1px;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+.q1{
+    margin-right: 30px;
+    
+}

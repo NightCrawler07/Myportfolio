@@ -1,0 +1,11 @@
+body{
+    background:url("first.png");
+    text-align: center;
+    background-repeat: no-repeat;
+}
+.about{
+    font-size: 2rem ;
+    padding: 10px;
+    padding-left: 310px;
+    padding-right: 500px;
+}
